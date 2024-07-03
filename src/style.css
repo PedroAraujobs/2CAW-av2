@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primaryColor: #482729;
+  --baseColor: #eceae4;
+  --secondaryColor: #b8a875;
+
+  --font-main: "Akaya Telivigala", system-ui;
+}
+header {
+  height: 8.5vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primaryColor);
+  color: var(--baseColor);
+  font-family: var(--font-main);
+}
+header nav {
+  height: 8vh;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul {
+  width: 35vw;
+  height: 8vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.4rem;
+  list-style: none;
+}
+header li {
+  color: var(--baseColor);
+}
+header img {
+  height: 8vh;
+  width: 20vw;
+  object-fit: cover;
+}
+main {
+  display: flex;
+  height: 140vh;
+  justify-content: space-between;
+  background-color: var(--baseColor);
+  align-items: center;
+  font-family: var(--font-main);
+}
+footer {
+  background-color: var(--baseColor);
+  font-family: var(--font-main);
+  color: #482729;
+  width: 80%;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  text-align: start;
+  line-height: 20px;
+}
+
+/*Index*/
+aside {
+  width: 15vw;
+  background-color: #b8a875;
+  height: 110%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20vh;
+  border-radius: 25px;
+}
+
+.products {
+  width: 80vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+.productsrow {
+  width: 78vw;
+  height: 40vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  width: 23vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0.5px 0.5px var(--secondaryColor);
+}
+
+.card img {
+  width: 20vw;
+  height: 20vh;
+  object-fit: fill;
+  border-radius: 5px;
+}
+
+.card:hover {
+  border: solid 2px var(--secondaryColor);
+  transition: 10ms;
+}
+.valueColor {
+  color: var(--primaryColor);
+  font-weight: 400;
+}
+
+.topic {
+  height: 20vh;
+  width: 13vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
+
+.topic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  cursor: pointer;
+  object-fit: fill;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.topic img:hover {
+  transform: scale(1.1);
+}
+a {
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+
+/*Product*/
+
+.product {
+  height: 90vh;
+}
+.productMedia {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70vw;
+}
+
+.mainImageFigure {
+  position: relative;
+  border: solid transparent 250px;
+}
+.mainImage {
+  height: 70vh;
+  width: 40vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.altImages {
+  height: 70vh;
+  width: 40vw;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s ease;
+}
+.altPicsColumn {
+  background-color: var(--secondaryColor);
+  border-radius: 10px;
+  width: 10vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.altPicsColumn img {
+  width: 5vw;
+  height: 7vh;
+  cursor: pointer;
+  object-fit: fill;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+.altPicsColumn img:hover {
+  opacity: 0.8;
+}
+.productInfo {
+  background-color: var(--secondaryColor);
+  border-radius: 20px;
+  width: 40vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.productInfo p {
+  text-align: start;
+  width: 30vw;
+  height: 30vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/*productCart*/
+
+input {
+  border: none;
+  height: 5vh;
+  width: 18vw;
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+  border-radius: 20px;
+  text-align: center;
+}
+
+select {
+  border: none;
+  height: 5vh;
+  width: 18vw;
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+  border-radius: 20px;
+  font-family: var(--font-main);
+  text-align: center;
+}
+button {
+  border: none;
+  height: 5vh;
+  width: 18vw;
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+  border-radius: 8px;
+  font-family: var(--font-main);
+  text-align: center;
+}
+
+.productCart {
+  border-radius: 20px;
+  width: 50vw;
+  height: 70vh;
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userInfo {
+  border-radius: 20px;
+  width: 40vw;
+  height: 70vh;
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

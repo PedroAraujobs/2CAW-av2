@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/joo-de-barro-favicon-black.svg"
+      type="image/x-icon"
+    />
+    <script src="./src/script.js"></script>
+    <title>Carrinho</title>
+  </head>
+  <body>
+    <header>
+      <figure>
+        <img src="./assets/joaodebarro.svg" alt="Logo Joao de Barro" />
+      </figure>
+      <nav>
+        <ul>
+          <a href="./index.html"><li>Ínicio</li></a>
+          <a href="./productCart.html"><li>Carrinho</li></a>
+        </ul>
+      </nav>
+    </header>
+    <main class="product">
+      <section class="productCart">
+        <section>
+          <label for="productTable"> Produtos:</label>
+          <select name="produtos" id="productTable">
+            <option value="">-Escolha-</option>
+            <option value="980" product-name="mesa madeira de lei">
+              mesa madeira de lei- R$980,00
+            </option>
+            <option value="1300" product-name="Estante Mogno">
+              Estante Mogno - R$1300,00
+            </option>
+            <option value="699" product-name="Sofá três lugares">
+              Sofá três lugares - R$699,00
+            </option>
+            <option value="950" product-name="Rack madeira">
+              Rack madeira - R$950,00
+            </option>
+            <option value="2200" product-name="Cama king size">
+              Cama king size - R$2200,00
+            </option>
+            <option value="320" product-name="Armário 2 portas">
+              Armário 2 portas - R$320,00
+            </option>
+            <option value="490" product-name="Bancada mármore banheiro">
+              Bancada mármore banheiro - R$490,00
+            </option>
+            <option value="720" product-name="Porta corrida em madeira">
+              Porta corrida em madeira - R$720,00
+            </option>
+            <option value="950" product-name="Conjunto de mesa de cabiceira">
+              Conjunto de mesa de cabiceira - R$950,00
+            </option>
+          </select>
+          <button onclick="AddProduct()">Adicione o produto</button>
+        </section>
+        <section>
+          <div id="productsCount"></div>
+          <p id="totalValue"></p>
+        </section>
+      </section>
+      <section class="userInfo">
+        <input type="text" value="Nome ou CPF" />
+        <select name="Formas de pagamento" id="">
+          <option value="">Formas de pagamento</option>
+          <option value="Pix">PIX</option>
+          <option value="Dinheiro">Dinheiro</option>
+          <option value="cartao">Cartão</option>
+          <option value="boleto">Boleto</option>
+        </select>
+        <div>
+          <input type="text" value="CEP" />
+          <p>ou Retire em nossa loja!</p>
+          <p>Endereço: 23070-190, Campo Grande-RJ</p>
+        </div>
+        <button onclick="location.href='./index.html'">Comprar</button>
+      </section>
+    </main>
+    <footer>
+      <section class="info">
+        <section>
+          <p>Contatos</p>
+          <p>Whatsapp:</p>
+          <p>(21) 98330-8218</p>
+          <p>Instagram:</p>
+          <p>@JoaodeBarroMóveis</p>
+        </section>
+        <section>
+          <p>Endereço:</p>
+          <p>23070-190, Campo Grande-RJ</p>
+        </section>
+      </section>
+    </footer>
+  </body>
+</html>
